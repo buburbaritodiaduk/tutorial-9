@@ -8,7 +8,13 @@ URL ini adalah *connection string* yang identik dengan yang digunakan oleh progr
 
 **Screenshot RabbitMQ:**
 ![RabbitMQ UI](rabbitmq.png)
-    
+
+**Screenshot Spike Chart:**
+![Spike Chart](spike_chart.png)
+
+*Penjelasan:* Grafik mengalami lonjakan tajam (spike) karena publisher melakukan pengiriman pesan (spam) dalam jumlah besar pada waktu yang hampir bersamaan. Akibatnya, antrean menumpuk sesaat di dalam RabbitMQ sebelum subscriber sempat memproses semuanya.
+
+
 
 
 
