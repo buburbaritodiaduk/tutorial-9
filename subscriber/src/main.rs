@@ -1,37 +1,44 @@
-use crosstown_bus::{CrosstownBus, MessageHandler, HandleError, QueueProperties};
 use borsh::{BorshDeserialize, BorshSerialize};
-use std::time::Duration;
+use crosstown_bus::{CrosstownBus, MessageHandler, HandleError};
+use std::{thread, time};
 
 #[derive(Debug, Clone, BorshDeserialize, BorshSerialize)]
 pub struct UserCreatedEventMessage {
     pub user_id: String,
-    pub user_name: String,
+    pub user_name: String
 }
 
-pub struct UserCreatedEventHandler;
+pub struct UserCreatedHandler;
 
-impl MessageHandler<UserCreatedEventMessage> for UserCreatedEventHandler {
-    fn handle(&self, message: Box<UserCreatedEventMessage>) -> Result<(), HandleError> {
-        println!("Message received on handler: {:?}", message);
+impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
+
+    fn handle(&self, message: Box<UserCreatedEventMessage>
+    ) -> Result<(), HandleError> {
+        let _ten_millis = time::Duration::from_millis(1000);
+        let _now = time::Instant::now();
+
+        // thread::sleep(_ten_millis);
+
+        println!("In Aryandana's Computer [2406438214]. Message received: {:?}", message);
         Ok(())
+    }
+    
+    fn get_handler_action(&self) -> String {
+        "".to_string()
     }
 }
 
-#[tokio::main]
-async fn main() {
-    let listener = CrosstownBus::new_subscriber("amqp://guest:guest@localhost:5672".to_owned()).unwrap();
+fn main() {
+    let listener =
+        CrosstownBus::new_queue_listener("amqp://guest:guest@localhost:5672".to_owned()
+        ).unwrap();
 
-    let _ = listener.subscribe(
-        "user_created".to_owned(),
-        UserCreatedEventHandler{},
-        QueueProperties::default()
-    );
+    _ = listener.listen("user_created".to_owned(), UserCreatedHandler{},
+                        crosstown_bus::QueueProperties { auto_delete: false, durable: false,
+                            use_dead_letter: true });
 
-    println!("Subscriber sudah siap dan sedang mendengarkan antrean 'user_created'...");
-
-    let ten_millis = Duration::from_millis(10);
+    println!("Subscriber jalan...");
 
     loop {
-        // std::thread::sleep(ten_millis);
     }
 }
