@@ -1,0 +1,14 @@
+/Users/nandapascua/tutorial-9/publisher/target/debug/deps/serde-eb51a6eff327b2f4.d: /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/nandapascua/tutorial-9/publisher/target/debug/build/serde-31c9bc0da452145f/out/private.rs
+
+/Users/nandapascua/tutorial-9/publisher/target/debug/deps/libserde-eb51a6eff327b2f4.rlib: /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/nandapascua/tutorial-9/publisher/target/debug/build/serde-31c9bc0da452145f/out/private.rs
+
+/Users/nandapascua/tutorial-9/publisher/target/debug/deps/libserde-eb51a6eff327b2f4.rmeta: /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/nandapascua/tutorial-9/publisher/target/debug/build/serde-31c9bc0da452145f/out/private.rs
+
+/Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/nandapascua/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/nandapascua/tutorial-9/publisher/target/debug/build/serde-31c9bc0da452145f/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/nandapascua/tutorial-9/publisher/target/debug/build/serde-31c9bc0da452145f/out
