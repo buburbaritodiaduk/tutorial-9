@@ -17,12 +17,10 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
         let _ten_millis = time::Duration::from_millis(1000);
         let _now = time::Instant::now();
 
-        // thread::sleep(_ten_millis);
-
         println!("In Aryandana's Computer [2406438214]. Message received: {:?}", message);
         Ok(())
     }
-    
+
     fn get_handler_action(&self) -> String {
         "".to_string()
     }
@@ -38,7 +36,8 @@ fn main() {
                             use_dead_letter: true });
 
     println!("Subscriber jalan...");
-
+        
     loop {
+        thread::sleep(time::Duration::from_millis(10));
     }
 }
