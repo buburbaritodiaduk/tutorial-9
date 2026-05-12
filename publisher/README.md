@@ -9,6 +9,11 @@ URL ini adalah *connection string* yang identik dengan yang digunakan oleh progr
 **Screenshot RabbitMQ:**
 ![RabbitMQ UI](rabbitmq.png)
 
+**Screenshot Penerimaan Pesan:**
+![Terminal Log](terminal_log.png)
+
+*Penjelasan:* Gambar di atas membuktikan bahwa program subscriber berhasil menerima 5 event message secara langsung (real-time) dari message broker sesaat setelah publisher mengirimkannya.
+
 **Screenshot Spike Chart:**
 ![Spike Chart](spike_chart.png)
 
